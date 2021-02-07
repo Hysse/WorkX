@@ -1,0 +1,118 @@
+@charset "ISO-8859-1";
+
+
+@media only screen and (max-width: 1036px) {
+	.header p {
+		font-size : 25px
+	}
+	
+	.nav {
+		grid-template-columns : 1fr 1fr;
+	}
+	
+	#navbtns {
+		grid-column : 2 / 3;
+		justify-self : end;
+	}
+	
+}
+
+@media only screen and (max-width: 720px) {
+	
+	.main-wrapper {
+		margin-top : 300px;
+		grid-template-columns : 1fr;
+		grid-template-rows : 50px 1fr 450px;
+	}	
+		
+	.rightside {
+		grid-row : 1 / 2;
+		justify-self : center;
+		width : 100%;
+	}
+	
+	.leftside {
+		grid-row : 3 / 4;
+		justify-self : center;
+		width : 100%;
+	}
+	
+	.content {
+		grid-row : 2 / 3;
+		margin-top : 50px;
+	}
+
+	.nav {
+		grid-template-rows : 1fr 1fr 1fr;
+		grid-template-columns : auto;
+	}
+	
+	#searchbar {
+		grid-row : 3 / 4;
+		grid-column : 1 / 2;
+		justify-self : center;
+		width : 100%;
+	}
+	
+	#navbtns {
+		grid-row : 2 / 3;
+		grid-column : 1 / 2;
+		justify-self : center;
+		width : 100%;
+		text-align : center;
+	}
+	
+	.nav ul {
+		grid-row : 1 / 2;
+		grid-column : 1 / 2;
+		justify-self : center;
+		text-align : center;
+	}
+	
+	
+	
+	.content {
+		grid-column : 1 / 4;
+	}
+	
+	.header p {
+		display : none;
+	}
+	
+	#logoheader {
+		grid-column : 1 / 4;
+	}
+	
+	
+}
+
+@media only screen and (max-width: 500px) {
+	
+
+	
+	#logoheader {
+		justify-self : center;
+		content:url("/ProgettoWorkX/Images/logo-phone.png"); 
+	}
+	
+	.header-wrapper {
+		grid-template-columns: 1fr;
+    	grid-template-rows: 75px 1fr;
+	}
+	
+	.main-wrapper {
+		margin-top : 225px;
+	}
+	
+	.nav li {
+		width : 70px;
+		font-size : 15px;
+	}
+}
+
+@media only screen and (max-width: 350px) {
+	.nav li {
+		width : 55px;
+		font-size : 10px;
+	}
+}

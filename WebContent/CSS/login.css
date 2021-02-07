@@ -1,0 +1,255 @@
+@charset "ISO-8859-1";
+
+
+
+.button {
+	width : 120px;
+	background-color : #555555;
+ 	color: #eae7e7;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 16px;
+  	margin-right : 5px;
+}
+
+body::before {
+	content : "";
+	position : absolute;
+	top : 0;
+	left : 0;
+	width : 100%;
+	min-height : 100%;
+	background-image: url("../Images/blacksmith.jpg");
+	background-position : center;
+	filter:blur(2px);
+  	background-size: cover;
+}
+
+
+#outer {
+	display: table;
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	height: 100%;
+  	width: 100%;
+}
+
+#middle {
+	display: table-cell;
+  	vertical-align: middle;
+}
+
+#loginform {
+	width : 700px;
+	opacity : 0.8;
+	margin : 0 auto;
+	text-align : center;
+	background-color : #eae7e7;
+	display : grid;
+	grid-template-columns: 1fr;
+	grid-template-rows : auto 10px auto 10px 1fr 25px;
+	border-style : solid;
+	border-width : 2px;
+}
+
+#notifica {
+	grid-row : 7 / 8;
+	margin : 0;
+	margin-bottom : 10px;
+}
+
+#miniheader {
+	grid-row : 1 / 2;
+	display : block;
+	text-align : center;
+}
+
+#miniheader img {
+	max-width : 100%;
+	height : auto;
+}
+
+#miniheader h2 {
+	margin-top : 0;
+}
+
+.inserisci {
+	font-size : 25px;
+	font-family: Arial, Helvetica, sans-serif;
+	color : #7b6b6b;
+	grid-row : 3 / 4;
+	display : inline-block;
+	margin : 0;
+}
+
+#inputform {
+	width : 100%;
+	text-align : center;
+	grid-row : 5 / 6;
+	display : grid;
+	grid-template-columns : 1fr 1fr 1fr;
+	grid-template-rows : 20px 50px 20px 50px 20px 20px 1fr 20px;
+}
+
+label {
+	grid-column : 2 / 3;
+}
+
+#username{
+	grid-column : 2 / 3;
+	margin : 0 auto;
+}
+
+#password{
+	grid-column : 2 / 3;
+	margin : 0 auto;
+}
+
+#mostra {
+	grid-column : 2 / 3;
+	grid-row : 5 / 6;
+	margin-left : 100px;
+}
+
+#showlabel {
+	grid-column : 2 / 3;
+	grid-row : 5 / 6;
+}
+
+#buttons {
+	display : flex;
+	grid-row : 7 / 8;
+	grid-column : 2 / 3;
+	justify-self : center;
+}
+
+
+.insert {
+	width : 90%;
+	clear : both;
+	box-sizing: border-box;
+	margin : 8px 0;
+	display : inline-block;
+	border: 1px solid #ccc;
+  	border-radius: 4px;
+  	box-sizing: border-box;
+  	border: 2px solid #ccc;
+  	border-radius: 4px;
+  	font-size: 16px;
+  	background-color: #eae7e7;
+  	padding: 12px 20px 12px 12px;
+}
+
+#signform {
+	grid-row : 5 / 6;
+	display : grid;
+	grid-template-columns : 100px 1fr 1fr 1fr 100px;
+	grid-template-rows : 50px 50px 50px 50px 15px 50px 50px 15px 15px 50px 15px;
+}
+
+.reglab {
+	grid-column : 1 / 2;
+	line-height: 45px;
+	justify-self : end;
+	margin-right : 10px;
+}
+
+#nome {
+	grid-row : 1 / 2;
+	grid-column : 2 / 6;
+}
+
+#cognome {
+	grid-row : 2 / 3;
+	grid-column : 2 / 6;
+}
+
+#usernamereg {
+	grid-row : 3 / 4;
+	grid-column : 2 / 6;
+}
+
+#passwordreg {
+	grid-row : 4 / 5;
+	grid-column : 2 / 6;
+}
+
+#passlab {
+	grid-row : 4 / 5;
+}
+
+.mostrapwd {
+	grid-row : 5 / 6;
+	grid-column : 2 / 6;
+	justify-self : start;
+}
+
+#numero {
+	grid-row : 6 / 7;
+	grid-column : 2 / 6;
+}
+
+#numlab {
+	grid-row : 6 / 7;
+	grid-column : 1 / 2;
+}
+
+#proflab {
+	grid-row : 7 / 8;
+}
+
+#profession {
+	grid-row : 7 / 8;
+	grid-column : 2 / 6;
+	width : 90%;
+	box-sizing: border-box;
+	margin : 8px 0;
+	display : inline-block;
+	border: 1px solid #ccc;
+  	border-radius: 4px;
+  	box-sizing: border-box;
+  	border: 2px solid #ccc;
+  	border-radius: 4px;
+  	font-size: 16px;
+  	background-color: #eae7e7;
+}
+
+span {
+	justify-self : center;
+	grid-row : 8 / 9;
+	grid-column : 2 / 5;
+}
+
+#buttonsreg {
+	grid-row : 10 / 11;
+	grid-column : 2 / 5;
+	justify-self : center;
+}
+
+
+@media only screen and (max-width: 768px) {
+	#inputform .button {
+		width : 60px;
+  		font-size: 10px;
+  		margin-right : 5px;
+	}
+	
+	.inserisci {
+		font-size : 15px;
+	}
+	
+	#loginform{
+		width : 100%;
+		border-width : 0px;
+	}
+	
+	#mostra {
+		margin-left : 15px;
+	}
+	
+	#signform {
+		height : 100%;
+	}
+}
